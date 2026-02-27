@@ -27,3 +27,7 @@ def test_echo_validation_error():
     # sem o campo obrigatório "text"
     r = client.post("/echo", json={})
     assert r.status_code == 422
+
+def test_sum_parameters():
+    r = client.get("/sum", params={'a':5, 'b':7})
+    assert r.json() == {"result": 12}
