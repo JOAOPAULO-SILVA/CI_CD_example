@@ -41,5 +41,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/joaopaulo-silva/ci_cd_example:latest
+            ghcr.io/joaopaulo-silva/ci_cd_example:${{ github.sha }}
